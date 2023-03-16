@@ -8,7 +8,7 @@
             box-sizing: border-box;
 }
 img{
-    width: 100%;
+    width: auto;
 }
 a{
     color: #000;
@@ -1471,7 +1471,9 @@ label{
 .mobileBoxTools{
     display: none;
 }
-
+.hideBlock{
+    display: none;
+}
 .swiperMobile{
     display: none;
 }
@@ -1558,6 +1560,11 @@ label{
                 align-items: flex-start;
     }
     .mobileBoxTools{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .hideBlock{
         display: block;
     }
     .direcrionMainTool{
@@ -2030,6 +2037,7 @@ label{
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+    width: 100%;
     }
     .btnMobile{
         display: block;
@@ -2051,5 +2059,44 @@ label{
     }
     .productSlider img{
         max-width: 50px;
+    }
+    .mainToolUp{
+        width: 100%;
+    }
+    .mainToolUp a{
+        width: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .boxMainToolUp{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .boxMainToolUp{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .boxMainToolDown{
+        width: 100%;
+    }
+    .mainToolDown{
+        width: 100%;
+    }
+    .mainToolDown a{
+        width: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
     }
 }
