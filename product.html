@@ -8,8 +8,8 @@
 
     <!-- style -->
     <link rel="stylesheet" href="fonts/Grapgik LCG/stylesheet.css" type="text/css">
-    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -31,7 +31,7 @@
                  </div>
                  <nav class="navbar">
                     <ul class="menu">
-            
+                        <li><a href="#" class="btnMobile">Корзина</a></li>
                         <li><a href="Blog.html">Блог</a></li>
                         <li><a href="aboutCompany.html">О компании</a></li>
                         <li><a href="technicalInformation.html">Техническая информация</a></li>
@@ -132,7 +132,7 @@
                 </div>
                 <div class="product">
                     <div class="productLeft">
-                        <div class="swiper sliderRightInfo">
+                        <div class="swiper sliderRightInfo swiper__product">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                               <!-- Slides -->
@@ -157,26 +157,26 @@
                         <div class="containerDimensions">
                             <span>Размер</span>
                             <div class="boxDimensions">
-                                <button id="block-1">835мм цельный</button>
-                                <div class="dimensionsInput"  id="btn-1">
+                                <button id="block-1" class="btn1">835мм цельный</button>
+                                <div class="dimensionsInput"  id="btn-1" class="btn1">
                                     <button onclick="decreaseValue('input1')">-</button> 
                                     <input class="inptuProduct"  type="number" id="input1"  value="1" readonly/>
                                     <button onclick="increaseValue('input1')">+</button>                      
                                 </div>                             
                             </div>       
                             <div class="boxDimensions">
-                                <button id="block-2">835мм цельный</button>
-                                <div class="dimensionsInput" id="btn-2">
+                                <button id="block-2" class="btn2">415мм цельный</button>
+                                <div class="dimensionsInput2" id="btn-2">
                                     <button onclick="decreaseValue('input2')">-</button>
-                                    <input class="inptuProduct" type="number" id="input2" value="1" readonly/>
-                                    <button onclick="increaseValue('input2')">+</button>   
+                                    <input class="inptuProduct2" type="number" id="input2" value="1" readonly/>
+                                    <button onclick="increaseValue('input2')" >+</button>   
                                 </div>                             
                             </div> 
                             <div class="boxDimensions">
-                                <button id="block-3">835мм цельный</button>
-                                <div class="dimensionsInput" id="btn-3">
+                                <button id="block-3" class="btn3">835мм секционный</button>
+                                <div class="dimensionsInput3" id="btn-3">
                                     <button onclick="decreaseValue('input3')">-</button>
-                                    <input class="inptuProduct" type="number" id="input3" value="1" readonly />
+                                    <input class="inptuProduct3" type="number" id="input3" value="1" readonly />
                                     <button onclick="increaseValue('input3')">+</button>     
                                 </div>                             
                             </div>                  

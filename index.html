@@ -8,8 +8,8 @@
 
     <!-- style -->
     <link rel="stylesheet" href="fonts/Grapgik LCG/stylesheet.css" type="text/css">
-    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <div class="wrapper">
@@ -31,7 +31,7 @@
                  </div>
                  <nav class="navbar">
                     <ul class="menu">
-            
+                        <li><a href="#" class="btnMobile">Корзина</a></li>
                         <li><a href="Blog.html">Блог</a></li>
                         <li><a href="aboutCompany.html">О компании</a></li>
                         <li><a href="technicalInformation.html">Техническая информация</a></li>
@@ -126,7 +126,42 @@
 
         <!-- main -->
         <main class="main">
-            <div class="swiper">
+            <div class="swiper swiperMobile">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="mainSlider">
+                        <div class="mainSliderLeft">
+                            <h1>Длинное название в две  или три строки, чтобы точно поместилось</h1>
+                            <p>Осуществляем прямые поставки с завода. Будет  собственный склад гибочного инструмента в России,  в г. Санкт-Петербург, чтобы у клиентов была  возможность получать инструмент из наличия.</p>
+                            <button>Купить</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mainSlider">
+                        <div class="mainSliderLeft">
+                            <h1>Длинное название в две  или три строки, чтобы точно поместилось</h1>
+                            <p>Осуществляем прямые поставки с завода. Будет  собственный склад гибочного инструмента в России,  в г. Санкт-Петербург, чтобы у клиентов была  возможность получать инструмент из наличия.</p>
+                            <button>Купить</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mainSlider">
+                        <div class="mainSliderLeft">
+                            <h1>Длинное название в две  или три строки, чтобы точно поместилось</h1>
+                            <p>Осуществляем прямые поставки с завода. Будет  собственный склад гибочного инструмента в России,  в г. Санкт-Петербург, чтобы у клиентов была  возможность получать инструмент из наличия.</p>
+                            <button>Купить</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper swiperDesktop">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -173,6 +208,18 @@
             
             <div class="mainTool">
                 <div class="mainToolUp">
+                    <a href="#">
+                        <div class="boxMainToolUp mobileBoxTools">
+                            <h2>AMADA SYSTEM</h2>
+                            <img src="style/images/tool.svg" alt="tool">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="boxMainToolUp mobileBoxTools">
+                            <h2>TRUMPF SYSTEM</h2>
+                            <img src="style/images/tool1.svg" alt="tool">
+                        </div>
+                    </a>
                     <div class="direcrionMainTool">
                         <a href="#">
                             <div class="boxMainToolUp">
@@ -290,6 +337,18 @@
                     </div>
                 </div>
             </div>
+            <div class="mainDeliveryMobile mainDelivery">
+                <div class="mainSlider deliveryMain">
+                    <div class="mainSliderLeft deliveryLeft">
+                        <h1>Доставляем бесплатно</h1>
+                        <p>Бесплатная доставка инструмента  до терминала ТК в вашем городе</p>
+                        <div class="imgDelivery">
+                            <img src="style/images/DPD_logo_(2015).svg" alt="dpd">
+                            <img src="style/images/Dellin_Logo_Black.svg" alt="dellin">
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="containerMainBox">
                 <h1>Популярные товары</h1>
                 <div class="infoBox">
@@ -352,6 +411,15 @@
                     </div>
                     <div class="mainSliderRight">
                         <img src="style/images/guarantee.svg" alt="delivery">
+                    </div>
+                </div>
+            </div>
+            <div class="mainGuarantee mainGuaranteeMobile">
+                <div class="mainSlider deliveryMain">
+                    <div class="mainSliderLeft deliveryLeft">
+                        <h1>Даем гарантию 1 год</h1>
+                        <p>На любой инструмент. Гарантия  прописывается в договоре</p>
+                        <button>Выбрать инструмент</button>
                     </div>
                 </div>
             </div>
