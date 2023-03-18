@@ -2016,6 +2016,33 @@ label{
             -ms-flex-align: center;
                 align-items: center;
     }
+    .boxMainToolDown{
+        width: 100%;
+    }
+    .mainToolDown{
+        width: 100%;
+    }
+    .mainToolDown a{
+        width: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .boxMainToolUp{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .boxMainToolUp{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .boxMainToolDown{
+        width: 100%;
+    }
+    
 }
 @media (max-width: 400px){
     h1{
