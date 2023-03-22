@@ -712,6 +712,8 @@ label{
     margin-bottom: 24px;
 }
 .btnBlogTitle{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .btnBlogTitle a{
@@ -1429,7 +1431,7 @@ label{
 .swiper-button-prev,
 .swiper-button-next {
     opacity: 1;
-  top: 65%;
+  top: 50%;
   background: rgba(249, 249, 249, 0.5);
   border-radius: 100%;
   width: 40px !important;
@@ -1443,11 +1445,11 @@ label{
 }
 .swiper-button-next{
   background-image: url("images/right.svg");
-  right: 0px;
+  right: 30px;
 }
 .swiper-button-prev{
   background-image: url("images/left.svg");
-  left: 0px;
+  left: 30px;
 }
 .btnPrev{
     top: 50%;
@@ -1460,6 +1462,9 @@ label{
     background-color: rgba(0, 0, 0, 0);
     -webkit-box-shadow: none;
             box-shadow: none;
+}
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled{
+    opacity: 1;
 }
 
 
@@ -1531,6 +1536,26 @@ label{
 }
 .productSlider{
     margin-top: 10px;
+}
+select{
+    margin-top: 10px;
+    padding: 10px 24px;
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    border: 1px solid #3474C9;
+    border-radius: 8px;
+}
+option{
+        padding: 10px 24px;
+        font-family: 'Graphik LCG';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+
 }
 /* adaptive */
 
@@ -1718,7 +1743,8 @@ label{
         margin-top: 20px;
     }
     .btnBlogTitle{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     
 }
@@ -2175,4 +2201,10 @@ width: 100%;
         display: -ms-flexbox;
         display: flex;
     }
+    .swiper-button-next{
+        right: 10px;
+      }
+      .swiper-button-prev{
+        left: 10px;
+      }
 }
