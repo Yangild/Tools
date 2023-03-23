@@ -1557,6 +1557,89 @@ option{
         line-height: 130%;
 
 }
+
+
+/* Contacts.html */
+.containerContact{
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+/* reviews.html */
+.swiperReviews{
+    margin-top: 24px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.reviewsContainer{
+    width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-right: 40px;
+}
+.reviewsContainer img{
+    width: 400px;
+}
+.reviewsContainer h2 {
+    margin-top: 20px;
+}
+.containerMainBoxReviews{
+    margin-top: 0;
+}
+.slideReviews{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px;
+}
+.btnPrevReviews{
+    left: 0;
+}
+.btnNextReviews{
+    right: 0;
+}
+.containerVideo{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 24px;
+}
+.boxVideo{
+    margin-right: 40px;
+}
+.boxVideo h2{
+    margin-top: 20px;
+}
 /* adaptive */
 
 @media (max-width: 1600px) {
@@ -1958,6 +2041,32 @@ option{
             -ms-flex-align: center;
                 align-items: center;
     }
+    /* contact.html */
+    .containerContact{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    .contactContent{
+        margin-top: 40px;
+    }
+    /* Reviews.html */
+    .containerVideo{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .boxVideo{
+        margin-top: 20px;
+    }
 }
 @media (max-width: 678px) {
     .footerTitle{
@@ -2207,4 +2316,16 @@ width: 100%;
       .swiper-button-prev{
         left: 10px;
       }
+      .reviewsContainer{
+        width: 300px;
+      }
+      .reviewsContainer img{
+        width: 100%;
+    }
+    .btnPrevReviews{
+        left: 0;
+    }
+    .btnNextReviews{
+        right: 0;
+    }
 }
