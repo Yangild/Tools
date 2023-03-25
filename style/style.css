@@ -831,9 +831,9 @@ label{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 .sliderLeftInfo{
     padding: 60px;
@@ -1282,6 +1282,10 @@ label{
 .btn3{
     min-width: 170px;
 }
+.select1.activeBtn{
+   background: #3474C9;
+    color: #FFFFFF; 
+}
 .btn1.activeBtn{
     background: #3474C9;
     color: #FFFFFF;
@@ -1416,6 +1420,7 @@ label{
 
 
 /* swiper */
+
 .boxForSwiper{
     position: relative;
 }
@@ -1438,6 +1443,13 @@ label{
   height: 40px !important;
   background-position: center;
   background-repeat: no-repeat;
+}
+.btnProductSlider{
+    width: 30px !important;
+    height: 30px !important;
+    background: #F1F1F1;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -1538,7 +1550,7 @@ label{
     margin-top: 10px;
 }
 select{
-    margin-top: 10px;
+    margin-right: 10px;
     padding: 10px 24px;
     font-family: 'Graphik LCG';
     font-style: normal;
@@ -1593,10 +1605,9 @@ option{
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    margin-right: 40px;
 }
 .reviewsContainer img{
-    width: 400px;
+    width: 300px;
 }
 .reviewsContainer h2 {
     margin-top: 20px;
@@ -1640,6 +1651,10 @@ option{
 .boxVideo h2{
     margin-top: 20px;
 }
+.containerMainBoxReviewsMobile{
+    display: none;
+}
+
 /* adaptive */
 
 @media (max-width: 1600px) {
@@ -1661,6 +1676,9 @@ option{
         margin: 0 10px;
     }
     .footerTitlelRightForms input{
+        width: auto;
+    }
+    .reviewsContainer{
         width: auto;
     }
 }
@@ -2067,6 +2085,12 @@ option{
     .boxVideo{
         margin-top: 20px;
     }
+    .containerMainBoxReviewsMobile{
+        display: block;
+    }
+    .containerMainBoxReviews{
+        display: none;
+    }
 }
 @media (max-width: 678px) {
     .footerTitle{
@@ -2316,9 +2340,6 @@ width: 100%;
       .swiper-button-prev{
         left: 10px;
       }
-      .reviewsContainer{
-        width: 300px;
-      }
       .reviewsContainer img{
         width: 100%;
     }
@@ -2328,4 +2349,5 @@ width: 100%;
     .btnNextReviews{
         right: 0;
     }
+    
 }

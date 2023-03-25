@@ -140,8 +140,8 @@
                               <div class="swiper-slide"> <img src="style/images/Frame 4.jpg" alt="img"></div>
                             </div>
                             <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev btnPrev"></div>
-                            <div class="swiper-button-next btnNext" ></div>
+                            <div class="swiper-button-prev btnProductSlider"></div>
+                            <div class="swiper-button-next btnProductSlider" ></div>
                         </div>
                         <div class="productSlider">
                             <img src="style/images/miniproduct.svg" alt="product">
@@ -155,14 +155,19 @@
                             <s>15 799 ₽</s>
                         </div>
                         <div class="containerDimensions">
-                            <span>Размер</span>
-                            <div>
-                                <select >
-                                    <option>835мм цельный</option>
-                                    <option>415мм цельный</option>
-                                    <option>835мм секционный</option>
-                                </select>
-                            </div>                  
+                            <span>Размер</span>   
+                                <div class="boxDimensions">
+                                    <select id="select1" class="select1">
+                                        <option>835мм цельный</option>
+                                        <option>415мм цельный</option>
+                                        <option>835мм секционный</option>
+                                    </select>  
+                                    <div class="dimensionsInput"  id="btn-1" class="btn1">
+                                        <button onclick="decreaseValue('input1')">-</button> 
+                                        <input class="inptuProduct"  type="number" id="input1"  value="1" readonly/>
+                                        <button onclick="increaseValue('input1')">+</button>                      
+                                    </div>                             
+                                </div>                   
                         </div>
                         <div class="btnAddProduct">
                             <button class="btn">В корзину</button>

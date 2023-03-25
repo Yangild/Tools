@@ -134,3 +134,15 @@ for(let anchor of anchors) {
     })
   })
 }
+
+
+const btn1 = document.querySelector('.dimensionsInput');
+const input1 = document.querySelector('.inptuProduct');
+const select1 = document.querySelector('.select1');
+btn1.addEventListener('click', (e) => {
+  
+  btn1.classList.toggle('activeBtn');
+  input1.classList.toggle('activeBtn');
+  select1.classList.toggle('activeBtn');
+  e.preventDefault();
+});
