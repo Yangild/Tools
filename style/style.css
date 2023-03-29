@@ -521,7 +521,11 @@ label{
         -ms-flex-pack: justify;
             justify-content: space-between;
  }
+ .mainSliderLeft{
+    width: 500px !important;
+ }
  .mainSliderLeft p {
+    width: 500px;
     margin: 40px 0;
     font-weight: 400;
     font-size: 16px;
@@ -875,6 +879,7 @@ label{
     border-radius: 20px;
 }
 .blogForCompany p {
+    width: 768px;
     font-weight: 400;
     font-size: 16px;
     line-height: 145%;
@@ -898,6 +903,9 @@ label{
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 40px;
+}
+.aboutPeople{
+    min-height: 384px;
 }
 .aboutPeople img{
     border-radius: 20px;
@@ -957,18 +965,20 @@ label{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 60px;
 }
 .aboutFactoryRight {
     border-radius: 20px;
+    margin-left: 20px;
 }
 .aboutFactoryLeft p {
     margin: 20px 0px;
 }
 .infoBlueBack{
+    width: 530px;
     padding: 1px 20px;
     background: #E9EFF7;
     border-radius: 8px;
@@ -1040,6 +1050,7 @@ label{
 }
 .materialLeft h1{
     margin-bottom: 24px;
+    width: 400px;
 }
 .materialLeft li{
     font-weight: 400;
@@ -1195,10 +1206,12 @@ label{
     background: rgba(0, 0, 0, 0);
     border: 1px solid #3474C9;
     border-radius: 8px;
-    margin: 0 5px;
+    margin-right: 5px;
 }
 .dimensionsInput {
+    position: relative;
     width: 57px;
+    height: 37px;
     padding: 10px 0;
     background: #F9F9F9;
     border: 1px solid #3474C9;
@@ -1209,9 +1222,8 @@ label{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 }
 .dimensionsInput2{
     width: 57px;
@@ -1272,15 +1284,28 @@ label{
     background: rgba(0, 0, 0, 0);
 }
 .inptuProduct{
-    width: 20px;
+    z-index: 1;
+    left: 15px;
+    position: absolute;
+    width: 40px;
     text-align: center;
 }
+.btnMinus{
+    position: absolute;
+    z-index: 2;
+    left: 5px;
+    width: 10px;
+}
+.btnPlus{
+    position: absolute;
+    z-index: 2;
+    right: 5px;
+    width: 10px;
+}
 .inptuProduct2{
-    width: 20px;
     text-align: center;
 }
 .inptuProduct3{
-    width: 20px;
     text-align: center;
 }
 .btn1, 
@@ -1660,7 +1685,9 @@ option{
 .containerMainBoxReviewsMobile{
     display: none;
 }
-
+.mainSliderRight img {
+    width: 100%;
+}
 /* adaptive */
 
 @media (max-width: 1600px) {
@@ -1758,12 +1785,7 @@ option{
     .footerSuptitel{
         padding: 60px 80px;
     }
-    h1{
-        font-size: 26px;
-    }
-    h2{
-        font-size: 16px;
-    }
+
     .infoBox{
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -1803,49 +1825,29 @@ option{
         margin-right: 20px;
     }
 }
-@media (max-width: 1120px) {
-    .containerMainBoxInfo{
-        margin-top: 20px;
-    }
+@media (max-width: 1160px) {
     .footerTitlelRightFormsLocation{
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
     }
-    .swiperMobile{
-        display: block;
+}
+@media (max-width: 1120px) {
+    .containerMainBoxInfo{
+        margin-top: 20px;
     }
-    .swiperDesktop{
-        display: none;
-    }
+    
     .mainSlider{
         padding: 60px;
     }
     .mainSliderLeft p{
         margin: 20px 0;
     }
-    .mainDelivery{
-        display: none;
-    }
-    .mainDeliveryMobile{
-        display: block;
-    }
-    .mainGuarantee{
-        display: none;
-    }
-    .mainGuaranteeMobile{
-        display: block;
-    }
+   
+    
     /* aboutCompany.html */
-    .cardsMainIT{
-        display: none;
-    }
-    .cardsMainITMobile{
-        display: block;
-    }
-    .imgForCompany{
-        display: none;
-    }
+    
+    
     .aboutPeople{
         margin-top: 20px;
     }
@@ -1856,6 +1858,45 @@ option{
     
 }
 @media (max-width: 1000px) {
+    .materialLeft h1{
+        width: 360px;
+    }
+    .infoBlueBack{
+        width: auto;
+    }
+    .cardsMainIT{
+        display: none;
+    }
+    .cardsMainITMobile{
+        display: block;
+    }
+    .imgForCompany{
+        display: none;
+    }
+    .mainGuarantee{
+        display: none;
+    }
+    .mainGuaranteeMobile{
+        display: block;
+    }
+    .mainDelivery{
+        display: none;
+    }
+    .mainDeliveryMobile{
+        display: block;
+    }
+    h1{
+        font-size: 26px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .swiperMobile{
+        display: block;
+    }
+    .swiperDesktop{
+        display: none;
+    }
     .footerTitlelRightForms input{
         margin-right: 10px;
     }
@@ -1970,6 +2011,7 @@ option{
      }
      .packageLeft {
         margin-top: 20px;
+        margin-right: 0;
      }
      .product{
         -webkit-box-orient: vertical;
@@ -1992,6 +2034,66 @@ option{
      }
 }
 @media (max-width: 768px) {
+    .inptuProduct {
+        left: 7px;
+    }
+    .mainSliderLeft p{
+        width: 400px;
+    }
+    .boxMainToolDown img{
+        max-height: 144px;
+    }
+    .mainToolUp a {
+        width: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;  
+    }
+    .mainToolUp{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .mainToolDown{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    width: 100%;
+    }
+    .boxMainToolDown{
+        width: 100%;
+    }
+    .mainToolDown{
+        width: 100%;
+    }
+    .mainToolDown a{
+        width: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .boxMainToolUp{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .boxMainToolUp{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .boxMainToolDown{
+        width: 100%;
+    }
     .footerTitle{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -2135,6 +2237,12 @@ option{
     }
 }
 @media (max-width: 600px){
+    .boxInfoCompany h1 {
+        font-size: 24px;
+    }
+    .mainSliderLeft p{
+        width: 300px;
+    }
     .footerTitlelRightFormsLocation{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -2144,8 +2252,15 @@ option{
     .blockSize{
         width: 178px;
     }
+    
 }
 @media (max-width: 500px){
+    .materialLeft h1{
+        width: auto;
+    }
+    .phone-error{
+        bottom: -33px;
+    }
     .header{
         padding: 16px 20px;
     }
@@ -2192,32 +2307,7 @@ option{
             -ms-flex-align: center;
                 align-items: center;
     }
-    .boxMainToolDown{
-        width: 100%;
-    }
-    .mainToolDown{
-        width: 100%;
-    }
-    .mainToolDown a{
-        width: 100%;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    .boxMainToolUp{
-        margin-top: 20px;
-        width: 100%;
-    }
-    .boxMainToolUp{
-        margin-top: 20px;
-        width: 100%;
-    }
-    .boxMainToolDown{
-        width: 100%;
-    }
+   
     .swiper-button-next{
         right: 10px;
       }
@@ -2226,7 +2316,18 @@ option{
       }
     
 }
+@media (max-width: 460px){
+    .boxInfoCompany h1 {
+        font-size: 20px;
+    }
+}
 @media (max-width: 400px){
+    .boxInfoCompany h1 {
+        font-size: 18px;
+    }
+    .mainSliderLeft p{
+        width: auto;
+    }
     h1{
         font-size: 18px;
     }
@@ -2274,22 +2375,7 @@ width: 100%;
             -ms-flex-direction: column;
                 flex-direction: column;
     }
-    .mainToolUp{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
-    .mainToolDown{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-    width: 100%;
-    }
+    
     .btnMobile{
         display: block;
     }
