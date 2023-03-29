@@ -2375,7 +2375,6 @@ width: 100%;
             -ms-flex-direction: column;
                 flex-direction: column;
     }
-    
     .btnMobile{
         display: block;
     }
