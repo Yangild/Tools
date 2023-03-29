@@ -1198,6 +1198,7 @@ label{
     margin: 0 5px;
 }
 .dimensionsInput {
+    width: 57px;
     padding: 10px 0;
     background: #F9F9F9;
     border: 1px solid #3474C9;
@@ -1213,6 +1214,7 @@ label{
             justify-content: center;
 }
 .dimensionsInput2{
+    width: 57px;
     padding: 10px 0;
     background: #F9F9F9;
     border: 1px solid #3474C9;
@@ -1228,6 +1230,7 @@ label{
             justify-content: center;
 }
 .dimensionsInput3{
+    width: 57px;
     padding: 10px 0;
     background: #F9F9F9;
     border: 1px solid #3474C9;
@@ -1244,7 +1247,8 @@ label{
 }
 
 .dimensionsInput2 button{
-    padding: 0 8px;
+    margin: 0 2px;
+    padding: 0;
     border: none;
 }
 .dimensionsInput2 input{
@@ -1252,29 +1256,31 @@ label{
 }
 
 .dimensionsInput3 button{
-    padding: 0 8px;
+    margin: 0 2px;
+    padding: 0;
     border: none;
 }
 .dimensionsInput4 input{
     background: rgba(0, 0, 0, 0);
 }
 .dimensionsInput button{
-    padding: 0 8px;
+    margin: 0 2px;
+    padding: 0;
     border: none;
 }
 .dimensionsInput input{
     background: rgba(0, 0, 0, 0);
 }
 .inptuProduct{
-    width: 50px;
+    width: 20px;
     text-align: center;
 }
 .inptuProduct2{
-    width: 50px;
+    width: 20px;
     text-align: center;
 }
 .inptuProduct3{
-    width: 50px;
+    width: 20px;
     text-align: center;
 }
 .btn1, 
@@ -1447,7 +1453,7 @@ label{
 .btnProductSlider{
     width: 30px !important;
     height: 30px !important;
-    background: #F1F1F1;
+    background: rgba(249, 249, 249, 0.5);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -2134,6 +2140,9 @@ option{
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+    }
+    .blockSize{
+        width: 178px;
     }
 }
 @media (max-width: 500px){
