@@ -2218,6 +2218,12 @@ option{
     .boxMainToolDown{
         width: 100%;
     }
+    .swiper-button-next{
+        right: 10px;
+      }
+      .swiper-button-prev{
+        left: 10px;
+      }
     
 }
 @media (max-width: 400px){
