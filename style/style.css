@@ -522,7 +522,7 @@ label{
             justify-content: space-between;
  }
  .mainSliderLeft{
-    width: 500px !important;
+    width: 500px;
  }
  .mainSliderLeft p {
     width: 500px;
@@ -792,6 +792,9 @@ label{
             justify-content: space-between;
     margin-top: 60px;
 }
+.boxBlogNew{
+    margin-right: 20px;
+}
 .boxBlogNew img{
     border-radius: 20px;
 }
@@ -939,6 +942,7 @@ label{
 .cardsMainIT{
     margin-top: 120px;
 }
+
 .boxInfoCompany{
     margin-top: 120px;
     display: -webkit-box;
@@ -1389,7 +1393,7 @@ label{
 /* Modal for catalog */
 .productCatalog{
     position: relative;
-    z-index: 10000;
+    z-index: 999;
 }
 .modal {
     display: none;
@@ -1833,12 +1837,26 @@ option{
     }
 }
 @media (max-width: 1120px) {
+    h1{
+        font-size: 26px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    
+    .mainSliderLeft p{
+        font-size: 14px;
+        width: 400px;
+    }
+    .mainSliderLeft{
+        width: 400px;
+    }
     .containerMainBoxInfo{
         margin-top: 20px;
     }
     
     .mainSlider{
-        padding: 60px;
+        padding: 40px;
     }
     .mainSliderLeft p{
         margin: 20px 0;
@@ -1863,39 +1881,6 @@ option{
     }
     .infoBlueBack{
         width: auto;
-    }
-    .cardsMainIT{
-        display: none;
-    }
-    .cardsMainITMobile{
-        display: block;
-    }
-    .imgForCompany{
-        display: none;
-    }
-    .mainGuarantee{
-        display: none;
-    }
-    .mainGuaranteeMobile{
-        display: block;
-    }
-    .mainDelivery{
-        display: none;
-    }
-    .mainDeliveryMobile{
-        display: block;
-    }
-    h1{
-        font-size: 26px;
-    }
-    h2{
-        font-size: 16px;
-    }
-    .swiperMobile{
-        display: block;
-    }
-    .swiperDesktop{
-        display: none;
     }
     .footerTitlelRightForms input{
         margin-right: 10px;
@@ -2033,12 +2018,58 @@ option{
         width: 100%;
      }
 }
+@media (max-width:840px){
+    .blogForCompany p {
+        width: auto;
+    }
+    .containerBlogNewDirection{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
 @media (max-width: 768px) {
+    .cardsInfoRight{
+        position: static;
+    }
+    .mainSliderLeft p {
+        font-size: 14px;
+        margin: 10px 0;
+        width: auto;
+    }
+    .mainSliderLeft{
+        width: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .mainSlider{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+    }
+    .deliveryLeft{
+        margin-top: 20px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .cardsInfoLeft{
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
     .inptuProduct {
         left: 7px;
-    }
-    .mainSliderLeft p{
-        width: 400px;
     }
     .boxMainToolDown img{
         max-height: 144px;
@@ -2118,12 +2149,7 @@ option{
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     }
-    .containerBlogNewDirection{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-    }
+    
     .blogSlider{
         padding: 40px;
     }
@@ -2240,9 +2266,6 @@ option{
     .boxInfoCompany h1 {
         font-size: 24px;
     }
-    .mainSliderLeft p{
-        width: 300px;
-    }
     .footerTitlelRightFormsLocation{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -2320,13 +2343,17 @@ option{
     .boxInfoCompany h1 {
         font-size: 20px;
     }
+    .blogForCompany p{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .blogForCompany span {
+        font-size: 14px;
+    }
 }
-@media (max-width: 400px){
+@media (max-width: 420px){
     .boxInfoCompany h1 {
         font-size: 18px;
-    }
-    .mainSliderLeft p{
-        width: auto;
     }
     h1{
         font-size: 18px;
@@ -2335,7 +2362,7 @@ option{
         font-size: 14px;
     }
     .mainSlider{
-        padding: 20px;
+        padding: 30px;
     }
     .containerMainBoxInfo p{
         font-size: 13px;
