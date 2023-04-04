@@ -20,10 +20,22 @@
                     <a href="index.html"><img src="style/images/logo.svg" alt="tools"></a>
                 </div>
                 <div class="headerNavigation">
+                    <div class="navigationBoxLine">
                         <a href="Blog.html">Блог</a>
+                        <div class="navigationLine"></div>
+                    </div>
+                    <div class="navigationBoxLine">
                         <a href="aboutCompany.html">О компании</a>
+                        <div class="navigationLine"></div>
+                    </div>
+                    <div class="navigationBoxLine">
                         <a href="technicalInformation.html">Техническая информация</a>
+                        <div class="navigationLine"></div>
+                    </div>
+                    <div class="navigationBoxLine">
                         <a href="reviews.html">Отзывы</a>
+                        <div class="navigationLine"></div>
+                    </div>
                         <a href="contacts.html">Контакты</a>
                  </div>
                  <div class="headerNumber">
@@ -134,17 +146,19 @@
             </div>
             <div class="containerContact">
                 <div class="contactsLeft">
-                    <div class="footerSuptitelContent contactContent">
-                        <h2>КОНТАКТЫ</h2>
-                        <a href="tel:+79125371674"><h2>8 912 537 16 74</h2></a>
-                        <a href="mailto:mail@mail.com"><h2>mail@mail.com</h2></a>
-                        <p>г. Санкт-Петербург ул. <br> ХХХ, 22</p>
-                        <div class="iconNetwork">
-                            <a href="https://t.me/+79125371674"><img src="style/images/Telegram.svg" alt="telegram"></a>
-                            <a href="https://vk.me/"><img src="style/images/Vkontakte (VK).svg" alt="VK"></a>
-                            <a href="https://wa.me/+79125371674"><img src="style/images/WhatsApp.svg" alt="WhatsApp"></a>
-                        </div>
-                    </div>  
+                    <h2>Пункт выдачи товаров в г. Санкт-Петербург (с 12:00 до 19:00)</h2>
+                    <p class="contactInfo">Адрес: г. Санкт-Петербург ул. ХХХ, 22</p>
+                    <div class="contactInformation">
+                        <p>Телефон:</p><a href="tel:+79125371674"><span>8 912 537 16 74</span></a>
+                    </div>
+                    <div class="contactInformation">
+                    <p >Почта:</p><a href="mailto:mail@mail.com"><span>mail@mail.com</span></a>
+                    </div>
+                    <div class="iconNetwork">
+                        <a href="https://t.me/+79125371674"><img src="style/images/Telegram.svg" alt="telegram"></a>
+                        <a href="https://vk.me/"><img src="style/images/Vkontakte (VK).svg" alt="VK"></a>
+                        <a href="https://wa.me/+79125371674"><img src="style/images/WhatsApp.svg" alt="WhatsApp"></a>
+                    </div>
                 </div>
                 <div class="contactsRight">
                     <img src="style/images/map.svg" alt="map">
@@ -154,74 +168,73 @@
         <!-- end of main -->
         <!-- footer -->
         <footer class="footer">
-           <div class="footerTitle">
-                <div class="footerTitleLeft">
-                    <h1>Остались вопросы?</h1>
-                    <p>Оставьте свои контакты и специалисты нашей <br> компании ответят на все интересующие вопросы, <br> а также сделают наиболее выгодное предложение</p>
-                </div>
-                <div class="footerTitlelRight">
-                    <div class="footerTitlelRightForms">
-                        <form id="myForm" onsubmit="return validateForm()" class="footerTitlelRightFormsLocation">
-                            <input type="text" placeholder="Имя">
-                            <input type="tel" id="phone" name="phone" placeholder="+7 (" class="tel" >
-                            <span id="phone-error" class="phone-error">Пожалуйста введите номер в +7 (___) ___-__-__ формате.</span>
-                            <input type="submit" value="Отправить" class="btnSubmit">
-                          </form>
-                    </div>
-                    <p>Нажимая на кнопку “отправить”, вы соглашаетесь на обработку персональных <br> данных в соответствии с политикой конфиденциальности</p>
-                </div>
-           </div>
-           <div class="footerSuptitel">
-                <div class="footerSuptitelUp">
-                    <div class="footerSuptitelContent">
-                        <h2>КОНТАКТЫ</h2>
-                        <a href="tel:+79125371674"><h2>8 912 537 16 74</h2></a>
-                        <a href="mailto:mail@mail.com"><h2>mail@mail.com</h2></a>
-                        <p>г. Санкт-Петербург ул. <br> ХХХ, 22</p>
-                        <div class="iconNetwork">
-                            <a href="https://t.me/+79125371674"><img src="style/images/Telegram.svg" alt="telegram"></a>
-                            <a href="https://vk.me/"><img src="style/images/Vkontakte (VK).svg" alt="VK"></a>
-                            <a href="https://wa.me/+79125371674"><img src="style/images/WhatsApp.svg" alt="WhatsApp"></a>
-                        </div>
-                    </div>  
-                    <div class="footerSuptitelContent">
-                        <h2>МЕНЮ</h2>
-                        <a href="Blog.html">Блог</a>
-                        <a href="aboutCompany.html">О компании</a>
-                        <a href="technicalInformation.html">Техническая информация</a>
-                        <a href="reviews.html">Отзывы</a>
-                        <a href="contacts.html">Контакты</a>
-                    </div>
-                    <div class="footerSuptitelContent">
-                        <h2>КАТАЛОГ</h2>
-                        <div class="linkFooter">
-                            <div class="linksFooter">
-                                <a href="#">Пуансоны AMADA PROMECAM</a>
-                                <a href="#">Матрицы AMADA PROMECAM</a>
-                                <a href="#">Инструмент для плющения</a>
-                                <a href="#">Адаптеры пуансонов</a>
-                                <a href="#">Адаптеры матриц и подложки</a>
-                                <a href="#">Пуансоны WILA SYSTEM</a>
-                                <a href="#">Матрицы WILA SYSTEM</a>
-                            </div>
-                            <div class="linksFooter">
-                                <a href="#">Пуансоны TRUMPF SYSTEM</a>
-                                <a href="#">Матрицы TRUMPF SYSTEM</a>
-                                <a href="#">Z-гибка</a>
-                                <a href="#">Радиусная гибка</a>
-                                <a href="#">Гибка без следов</a>
-                                <a href="#">Специальный гибочный инструмент</a>
-                            </div>
-                        </div>
-
-                    </div> 
-                </div>
-                <div class="footerSuptitelDown">
-                    <p>© ООО «ХХХ»</p>
-                    <a href="#">Политика конфиденциальности</a>
-                </div>
-           </div>
-        </footer>
+            <div class="footerTitle">
+                 <div class="footerTitleLeft">
+                     <h1>Остались вопросы?</h1>
+                     <p>Оставьте свои контакты и специалисты нашей <br> компании ответят на все интересующие вопросы, <br> а также сделают наиболее выгодное предложение</p>
+                 </div>
+                 <div class="footerTitlelRight">
+                     <div class="footerTitlelRightForms">
+                         <form id="myForm" onsubmit="return validateForm()" class="footerTitlelRightFormsLocation">
+                             <input type="text" placeholder="Имя">
+                             <input type="tel" id="phone" name="phone" placeholder="+7 (" class="tel" >
+                             <span id="phone-error" class="phone-error">Пожалуйста введите номер в +7 (___) ___-__-__ формате.</span>
+                             <input type="submit" value="Отправить" class="btnSubmit">
+                           </form>
+                     </div>
+                     <p>Нажимая на кнопку “отправить”, вы соглашаетесь на обработку персональных <br> данных в соответствии с политикой конфиденциальности</p>
+                 </div>
+            </div>
+            <div class="footerSuptitel">
+                 <div class="footerSuptitelUp">
+                     <div class="footerSuptitelContent footerContent">
+                         <h2 class="footerContact">КОНТАКТЫ</h2>
+                         <a href="tel:+79125371674"><h2>8 912 537 16 74</h2></a>
+                         <a href="mailto:mail@mail.com"><h2>mail@mail.com</h2></a>
+                         <p>г. Санкт-Петербург ул. <br> ХХХ, 22</p>
+                         <div class="iconNetwork">
+                             <a href="https://t.me/+79125371674"><img src="style/images/Telegram.svg" alt="telegram"></a>
+                             <a href="https://vk.me/"><img src="style/images/Vkontakte (VK).svg" alt="VK"></a>
+                             <a href="https://wa.me/+79125371674"><img src="style/images/WhatsApp.svg" alt="WhatsApp"></a>
+                         </div>
+                     </div>  
+                     <div class="footerSuptitelContent footerMenu">
+                         <h2>МЕНЮ</h2>
+                         <a href="Blog.html">Блог</a>
+                         <a href="aboutCompany.html">О компании</a>
+                         <a href="technicalInformation.html">Техническая информация</a>
+                         <a href="reviews.html">Отзывы</a>
+                         <a href="contacts.html">Контакты</a>
+                     </div>
+                     <div class="footerSuptitelContent">
+                         <h2>КАТАЛОГ</h2>
+                         <div class="linkFooter">
+                             <div class="linksFooter">
+                                 <a href="#">Пуансоны AMADA PROMECAM</a>
+                                 <a href="#">Матрицы AMADA PROMECAM</a>
+                                 <a href="#">Инструмент для плющения</a>
+                                 <a href="#">Адаптеры пуансонов</a>
+                                 <a href="#">Адаптеры матриц и подложки</a>
+                                 <a href="#">Пуансоны WILA SYSTEM</a>
+                                 <a href="#">Матрицы WILA SYSTEM</a>
+                             </div>
+                             <div class="linksFooter">
+                                 <a href="#">Пуансоны TRUMPF SYSTEM</a>
+                                 <a href="#">Матрицы TRUMPF SYSTEM</a>
+                                 <a href="#">Z-гибка</a>
+                                 <a href="#">Радиусная гибка</a>
+                                 <a href="#">Гибка без следов</a>
+                                 <a href="#">Специальный гибочный инструмент</a>
+                             </div>
+                         </div>
+ 
+                     </div> 
+                 </div>
+                 <div class="footerSuptitelDown">
+                     <p>© ООО «ХХХ»</p>
+                 </div>
+            </div>
+         </footer>
         <!-- end of footer -->
         
         <!-- script -->

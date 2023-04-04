@@ -68,7 +68,7 @@ button{
 }
 .header{
     z-index: 1000;
-    padding: 16px 140px 25px 140px;
+    padding: 24px 140px;
 }
 .header img{
     width: auto;
@@ -118,12 +118,40 @@ label{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+}
+.headerNavigation{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.navigationBoxLine{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .headerNavigation a{
-    margin: 0 30px;
+    line-height: 145%;
     font-weight: 400;
     font-size: 16px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.headerNavigation a:hover{
+    color: #3474C9;
+}
+.navigationLine{
+    margin: 0 13px;
+    border: 1px solid #B6B6B6;
+    width: 0px;
+    height: 12px;
 }
 .headerNumber a h2{
     cursor: pointer;
@@ -147,19 +175,20 @@ label{
     line-height: 130%;
     color: #fff;
 
-    padding: 18px 24px;
+    padding: 8px 16px;
     background: #3474C9;
     border-radius: 8px;
     -webkit-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
     width: 194px;
-    margin-right: 10px;
+    height: 44px;
 }
 .headerBtn:hover{
     background: #2E68B5
 }
 .headerSearch{
+    height: 44px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -167,8 +196,12 @@ label{
         -ms-flex-align: center;
             align-items: center;
     border: 1px solid #B6B6B6;
-    border-radius: 5px;
+    border-radius: 8px;
     width: 80%;
+    margin: 0 8px;
+}
+.headerSearch img {
+    width: 100%;
 }
 .headerSearch input{
     font-family: 'Graphik LCG';
@@ -180,14 +213,21 @@ label{
     padding: 0 10px;
     background: #F9F9F9;
 }
+.headerBasket{
+    width: 89px;
+    height: 44px;
+}
+.headerBasket img {
+    width: 100%;
+}
 .headerBasket button{
-    padding:10px 24px ;
+    height: 44px;
+    padding:10px 30px ;
     background: #3474C9;
     border-radius: 8px;
     -webkit-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
-    margin-left: 10px;
 }
 .headerBasket button:hover{
     background: #2E68B5
@@ -210,6 +250,7 @@ label{
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
+
 .footerTitleLeft p {
     font-family: 'Graphik LCG';
     font-style: normal;
@@ -217,10 +258,9 @@ label{
     font-size: 16px;
     line-height: 145%;
     margin-top: 25px;
+    margin-right: 100px;
 }
-.footerTitlelRight{
-    padding: 0 20px;
-}
+
 .footerTitlelRightForms{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -238,8 +278,11 @@ label{
     font-weight: 400;
     font-size: 14px;
     line-height: 145%;
-    width: 270px;
-    margin-right: 10px;
+    width: 235px;
+    margin-right: 8px;
+}
+.tel{
+    width: 273px !important;
 }
 ::-webkit-input-placeholder { 
     color: #D6D6D6;
@@ -272,7 +315,7 @@ label{
  .footerTitlelRight p{
     margin-top: 24px;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 145%;
     /* or 19px */
 
@@ -312,19 +355,35 @@ label{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-right: 50px;
+    margin-right: 64px;
  }
  .footerSuptitelContent h2{
     margin-bottom: 40px;
  }
- .footerSuptitelContent a h2{
+ .footerSuptitelContent a{
+    margin-bottom: 16px;
+    width: 236px;
+ }
+ .footerContent{
+    margin-right: 121px;
+ }
+ .footerContent h2{
     margin-bottom: 16px;
  }
+ .footerContact{
+    margin-bottom: 40px !important;
+ }
+ .footerContent a {
+    margin-bottom: 0 !important;
+ }
+
  .footerSuptitelContent p {
     font-weight: 400;
     font-size: 16px;
     line-height: 145%;
     margin-bottom: 32px;
+    margin-top: 8px;
+    width: 179px;
  }
  .linkFooter{
     display: -webkit-box;
@@ -505,12 +564,14 @@ label{
   }
   
  /* main */
-
+.main{
+    background: #F9F9F9;;
+}
 
  .mainSlider{
     background: #E9EFF7;
     border-radius: 20px;
-    padding: 24px 0 24px 60px;
+    padding: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -520,9 +581,6 @@ label{
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
- }
- .mainSliderLeft{
-    width: 500px;
  }
  .mainSliderLeft p {
     width: 500px;
@@ -561,17 +619,18 @@ label{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
  }
  .boxMainToolUp{
+    margin-right: 40px;
     position: relative;
-    width: 270px;
+    width: 260px;
     height: 214px;
     border-radius: 15px;
     background: #fff;
-    padding: 24px;
+    padding: 20px;
  }
  .boxMainToolUp img{ 
     position: absolute;
@@ -579,18 +638,18 @@ label{
     right: 0;
  }
  .direcrionMainTool{
-    width: 715px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
  }
  .mainToolDown {
+
     margin-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -598,17 +657,18 @@ label{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
  }
 .boxMainToolDown{
+    margin-right: 40px;
     position: relative;
-    width: 715px;
+    width: 560px;
     height: 214px;
     border-radius: 15px;
     background: #fff;
-    padding: 24px;
+    padding: 20px;
  }
  .boxMainToolDown img{ 
     position: absolute;
@@ -619,6 +679,9 @@ label{
  .containerMainBox{
     margin-top: 120px;
  }
+ .containerMainBox h1 {
+    font-weight: 500;
+ }
 .infoBox{
     margin-top: 40px;
     display: -webkit-box;
@@ -627,11 +690,12 @@ label{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 }
 .containerMainBoxInfo{
+    margin-right: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -675,7 +739,8 @@ label{
     width: auto;
 }
 .deliveryMain{
-    padding: 24px 60px 0 60px;
+    padding: 60px;
+    position: relative;
 }
 .deliveryLeft p{
     margin-top: 24px;
@@ -728,7 +793,7 @@ label{
     padding: 14px;
     border: 1px solid #3474C9;
     border-radius: 8px;
-    background: #FFFFFF;
+    background: #F9F9F9;
     margin-right: 10px;
 }
 .btnBlogTitle a:focus{
@@ -765,6 +830,9 @@ label{
     font-size: 14px;
     line-height: 145%;
 }
+.blogSlider h1 {
+    margin-top: 16px;
+}
 .blogSlider p {
     margin-top: 24px;
     font-weight: 400;
@@ -793,7 +861,8 @@ label{
     margin-top: 60px;
 }
 .boxBlogNew{
-    margin-right: 20px;
+    margin-right: 40px;
+    min-width: 360px;
 }
 .boxBlogNew img{
     border-radius: 20px;
@@ -807,6 +876,7 @@ label{
 
     color: #3474C9;
     margin-top: 16px;
+    margin-bottom: 8px;
 }
 .boxBlogNew a h2{
     cursor: pointer;
@@ -826,6 +896,9 @@ label{
     position: relative;
     padding: 60px;
 }
+.aboutCompanyCard h1 {
+    margin-top: 16px;
+}
 .cardsInfoRight{
     position: absolute;
     right: -60px;
@@ -843,8 +916,10 @@ label{
             justify-content: flex-start;
 }
 .sliderLeftInfo{
+    width: 100%;
     padding: 60px;
     border-radius: 0px 20px 20px 0px;
+    background: #FFFFFF;
 }
 .sliderLeftInfo p {
     font-weight: 400;
@@ -909,6 +984,7 @@ label{
 }
 .aboutPeople{
     min-height: 384px;
+    margin-right: 40px;
 }
 .aboutPeople img{
     border-radius: 20px;
@@ -918,12 +994,17 @@ label{
     margin-bottom: 8px;
 }
 .itPlatform{
+    right: 60px;
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+}
+.itPlatform img {
+    width: auto;
 }
 .leftVector{
     position: relative;
@@ -951,13 +1032,25 @@ label{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     border-radius: 0px 20px 20px 0px;
+}
+.boxInfoCompany p {
+    margin-top: 24px;
+}
+.boxInfoCompany img{
+    width: auto;
 }
 .rightBoxInfoCompany{
     padding: 60px;
+    background: #FFFFFF;
+    width: 100%;
+    border-radius: 0px 20px 20px 0px;
+}
+.reversRightBoxInfoCompany{
+    border-radius: 20px 0px 0px 20px;
 }
 
 
@@ -966,9 +1059,9 @@ label{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -976,7 +1069,7 @@ label{
 }
 .aboutFactoryRight {
     border-radius: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 .aboutFactoryLeft p {
     margin: 20px 0px;
@@ -1073,6 +1166,8 @@ label{
     margin-bottom: 24px;
 }
 .containerInfoSections{
+    min-width: 360px;
+    margin-right: 40px;
     padding: 24px;
     background: #FFFFFF;
     border-radius: 20px;
@@ -1090,6 +1185,10 @@ label{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+}
+.containerInfoSections p {
+    margin-top: 8px;
+    margin-bottom: 4px;
 }
 .sectionsSuptitle h3{
     font-weight: 500;
@@ -1518,6 +1617,8 @@ label{
 
 /* phone-error */
 .btnSubmit{
+    border: none !important;
+    margin-right: 0 !important;
     color: #3474C9 !important;
     background: #FFFFFF !important;
     width: auto !important;
@@ -1608,19 +1709,38 @@ option{
 
 /* Contacts.html */
 .containerContact{
-
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
     display: -webkit-box;
 
     display: -ms-flexbox;
 
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
+.contactsLeft{
+    margin-bottom: 24px;
+}
+.contactInfo {
+    margin: 40px 0;
+}
+.contactInformation{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-bottom: 10px;
+}
+.contactInformation span{
+    margin-left: 10px;
+}
+
 /* reviews.html */
 .swiperReviews{
     margin-top: 24px;
@@ -1689,36 +1809,17 @@ option{
 .containerMainBoxReviewsMobile{
     display: none;
 }
-.mainSliderRight img {
-    width: 100%;
+.deliveryRight,
+.guaranteeRight
+{
+    right: 60px;
+    position: absolute;
+    width: auto;
+    top: 0;
 }
 /* adaptive */
 
-@media (max-width: 1600px) {
-    .direcrionMainTool{
-        width: 600px;
-    }
-    .boxMainToolDown{
-        width: 600px;
-    }
-}
-@media (max-width: 1500px) {
-    .direcrionMainTool{
-        width: 500px;
-    }
-    .boxMainToolDown{
-        width: 500px;
-    }
-    .headerNavigation a{
-        margin: 0 10px;
-    }
-    .footerTitlelRightForms input{
-        width: auto;
-    }
-    .reviewsContainer{
-        width: auto;
-    }
-}
+
 @media (max-width: 1400px) {
     .boxMainToolUp{
         display: -webkit-box;
