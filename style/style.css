@@ -217,9 +217,7 @@ label{
     width: 89px;
     height: 44px;
 }
-.headerBasket img {
-    width: 100%;
-}
+
 .headerBasket button{
     height: 44px;
     padding:10px 30px ;
@@ -451,7 +449,7 @@ label{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0px 20px;
+    padding-left: 20px;
   }
   
   .burger-menu {
@@ -1498,7 +1496,7 @@ label{
     display: none;
     position: absolute;
     z-index: 10000;
-    top: 62px;
+    top: 45px;
     overflow: auto;
     width: 300px;
 }
@@ -1821,6 +1819,13 @@ option{
 
 
 @media (max-width: 1400px) {
+    .reviewsContainer{
+        width: auto;
+        margin-right: 20px;
+    }
+    .reviewsContainer img{
+        width: 100%;
+    }
     .boxMainToolUp{
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1870,8 +1875,19 @@ option{
     .direcrionMainTool{
         display: none;
     }
+    .btnSubmit{
+        margin-top: 8px;
+    }
+}
+@media (max-width: 1386px) {
+    .footerSuptitelContent a {
+        width: auto;
+    }
 }
 @media (max-width: 1286px) {
+    .containerInfoSections{
+        min-width: 1px;
+    }
     .headerNumber{ 
         display: none;
     }
@@ -1892,6 +1908,9 @@ option{
     }
 
     .infoBox{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     }
@@ -1936,6 +1955,20 @@ option{
         display: -ms-flexbox;
         display: flex;
     }
+    .deliveryRight, .guaranteeRight{
+        position: static;
+    }
+    .mainDelivery img{
+        width: 100%;
+    }
+    .footerTitlelRightForms input{
+        width: auto;
+    }
+    .tel {width: auto !important;
+    }
+    .btnSubmit{
+        margin-top: 0px;
+    }
 }
 @media (max-width: 1120px) {
     h1{
@@ -1977,6 +2010,25 @@ option{
     
 }
 @media (max-width: 1000px) {
+    .aboutFactoryRight{
+        margin-right: 0;
+    }
+    .footerTitle{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }   
+    .footerTitlelRight{
+        padding: 0;
+    }
+    .footerTitlelRight input{
+        margin: 10px 0;
+        margin-right: 10px;
+    }
     .materialLeft h1{
         width: 360px;
     }
@@ -2002,9 +2054,6 @@ option{
     }
     .footerSuptitel{
         padding: 60px 40px;
-    }
-    .footerTitlelRight{
-        padding: 0px 20px;
     }
     .menu.active{
         right: 40px;
@@ -2119,7 +2168,26 @@ option{
         width: 100%;
      }
 }
+@media (max-width: 880px) {
+    .containerBlogNewDirection{
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-right: 0;
+    } 
+    .boxBlogNew{
+        margin-right: 25px;
+    }
+}
 @media (max-width:840px){
+    .mainToolDown{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .mainToolUp{
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
     .blogForCompany p {
         width: auto;
     }
@@ -2129,8 +2197,24 @@ option{
             -ms-flex-direction: column;
                 flex-direction: column;
     }
+    .footerContent{
+        margin-right: 50px;
+    }
+    
 }
 @media (max-width: 768px) {
+    .itPlatform{
+        position: static;
+    }
+    .itPlatform img{
+        width: 100%;
+    }
+    .circleLocation{
+        width: auto !important;
+    }
+    .headerBtn{
+        font-size: 16px;
+    }
     .cardsInfoRight{
         position: static;
     }
@@ -2222,26 +2306,13 @@ option{
     .boxMainToolUp{
         margin-top: 20px;
         width: 100%;
+        margin-right: 0;
     }
     .boxMainToolDown{
         width: 100%;
+        margin-right: 0;
     }
-    .footerTitle{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-    }   
-    .footerTitlelRight{
-        padding: 0;
-    }
-    .footerTitlelRight input{
-        margin: 10px 0;
-        margin-right: 10px;
-    }
+    
     .mainToolUp{
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -2295,15 +2366,6 @@ option{
                 align-items: center;
     }
     /* contact.html */
-    .containerContact{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-            -ms-flex-direction: column-reverse;
-                flex-direction: column-reverse;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
-    }
     .contactContent{
         margin-top: 40px;
     }
@@ -2326,8 +2388,6 @@ option{
     .containerMainBoxReviews{
         display: none;
     }
-}
-@media (max-width: 678px) {
     .footerTitle{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -2349,8 +2409,13 @@ option{
         margin-top: 0;  
         margin-bottom: 0;
     }
+}
+@media (max-width: 678px) {
+    .headerBasket button{
+        padding: 8px 20px;
+    }
     .headerBtn{
-        width: auto;
+        width: 150px;
         padding: 8px 10px;
     }
     .footerTitlelRight{
@@ -2360,7 +2425,10 @@ option{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column;
+                flex-direction: column;  
+    }
+    .imgDelivery img {
+        width: auto;
     }
 }
 @media (max-width: 600px){
@@ -2376,7 +2444,9 @@ option{
     .blockSize{
         width: 178px;
     }
-    
+    .footerTitleLeft p{
+        margin-right: 0;
+    }
 }
 @media (max-width: 500px){
     .materialLeft h1{
@@ -2441,6 +2511,12 @@ option{
     
 }
 @media (max-width: 460px){
+    .aboutPeople{
+        margin-right: 0;
+    }
+    .boxBlogNew{
+        margin-right: 0px;
+    }
     .boxInfoCompany h1 {
         font-size: 20px;
     }
@@ -2453,6 +2529,9 @@ option{
     }
 }
 @media (max-width: 420px){
+    .boxBlogNew{
+        min-width: 260px;
+    }
     .boxInfoCompany h1 {
         font-size: 18px;
     }
@@ -2484,6 +2563,7 @@ option{
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+        margin-right: 0;
     }
     .mainSliderLeft button{
         font-size: 16px;

@@ -27,7 +27,10 @@ function increaseValue(inputId) {
 
 function decreaseValue(inputId) {
   let input = document.getElementById(inputId);
-  input.value = parseInt(input.value) - 1;
+  let currentValue = parseInt(input.value);
+  if (currentValue > 1) {
+    input.value = currentValue - 1;
+  }
 }
 
 
