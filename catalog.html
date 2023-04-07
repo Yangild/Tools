@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrial Partners</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="fonts/Grapgik LCG/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+            <div class="headerTitle">
+                <div class="headerLogo">
+                    <a href="index.html"><img src="style/images/logo.svg" alt="tools"></a>
+                </div>
+                <div class="headerNavigation">
+                    <div class="navigationBoxLine">
+                        <a href="Blog.html">Блог</a>
+                        <div class="navigationLine"></div>
+                    </div>
+                    <div class="navigationBoxLine">
+                        <a href="aboutCompany.html">О компании</a>
+                        <div class="navigationLine"></div>
+                    </div>
+                    <div class="navigationBoxLine">
+                        <a href="technicalInformation.html">Техническая информация</a>
+                        <div class="navigationLine"></div>
+                    </div>
+                    <div class="navigationBoxLine">
+                        <a href="reviews.html">Отзывы</a>
+                        <div class="navigationLine"></div>
+                    </div>
+                        <a href="contacts.html">Контакты</a>
+                 </div>
+                 <div class="headerNumber">
+                        <a href="tel:+79125371674"><h2>8 912 537 16 74</h2></a>
+                 </div>
+                 <nav class="navbar">
+                    <ul class="menu">
+                        <li><a href="#" class="btnMobile">Корзина</a></li>
+                        <li><a href="Blog.html">Блог</a></li>
+                        <li><a href="aboutCompany.html">О компании</a></li>
+                        <li><a href="technicalInformation.html">Техническая информация</a></li>
+                        <li><a href="reviews.html">Отзывы</a></li>
+                        <li> <a href="contacts.html">Контакты</a></li>
+                        <li> <a href="tel:+79125371674"><h2>8 912 537 16 74</h2></a></li>
+                        
+                    </ul> 
+                    <div class="burger-menu">
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                      <div class="bar"></div>
+                    </div>   
+                             
+                  </nav>
+            </div>
+            <div class="headerSupTitle">
+                <div>
+                    <div class="modalOverlay close" id="modalOverlay"></div>
+                    <div class="productCatalog">
+                        <button class="headerBtn" id="modal-open-btn">Каталог товаров</button>
+                        <div id="modal" class="modal">
+                            <div id="modal-content">
+                                <div class="modalProduct">
+                                    <button>
+                                        <div class="triangle"></div>
+                                        <p>Пуансоны AMADA PROMECAM</p>
+                                    </button>
+                                    <button>
+                                        <div class="triangle"></div>
+                                        <p>Матрицы AMADA PROMECAM</p>
+                                    </button>
+                                    <button>
+                                        <div class="triangle"></div>
+                                        <p>Инструмент для плющения</p>
+                                    </button>
+                                    <button>
+                                        <div class="triangle"></div>
+                                        <p>Адаптеры пуансонов</p>
+                                    </button>
+                                    <button>
+                                        <div class="triangle"></div>
+                                        <p>Адаптеры матриц и подложки</p>
+                                    </button>
+                                    <button>
+                                        <div class="triangle"></div>
+                                        <p>Пуансоны WILA SYSTEM</p>
+                                    </button>
+                                    <button>
+                                        <div class="triangle"></div>
+                                        <p>Матрицы WILA SYSTEM</p>
+                                    </button>
+                                    <button>
+                                        <div class="triangle"></div>
+                                        <p>Пуансоны TRUMPF SYSTEM</p>
+                                    </button>
+                                    <button>
+                                        <div class="triangle"></div>
+                                        <p>Матрицы TRUMPF SYSTEM</p>
+                                    </button>
+                                    <button>
+                                        <div class="triangle"></div>
+                                        <p>Z-гибка</p>
+                                    </button>
+                                    <button>
+                                        <div class="triangle"></div>
+                                        <p>Радиусная гибка</p>
+                                    </button>
+                                    <button>
+                                        <div class="triangle"></div>
+                                        <p>Гибка без следов</p>
+                                    </button>
+                                    <button>
+                                        <div class="triangle"></div>
+                                        <p>Специальный гибочный инструмент</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerSearch">
+                    <label for="search"><img src="style/images/search.svg" alt="search"></label>
+                    <input type="text" id="search">
+                </div>
+                <div class="headerBasket">
+                    <button><img src="style/images/bascet.svg" alt="basket"></button>
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- main -->
+        <main class="main">
+            <div class="blogInfo">
+                <div class="blogTitle">
+                    <h1>
+                        AMADA SYSTEM
+                    </h1>
+                    <p class="navBand"> <a href="index.html">Главная</a> / <a href="catalog.html">Каталог</a> / <a href="#">AMADA SYSTEM</a> </p>
+                </div>
+                <div class="boxMainCatalog">
+                    <div class="mainCatalogLeft">
+                        <div class="borderCatalogTop"></div>
+                        <div class="modalProduct btnCatalogLeft">
+                            <button onclick="showModal('modal-1')">  
+                                <p>Пуансоны AMADA PROMECAM</p>
+                            </button>
+                        </div>
+                        
+                        <div id="modal-1" class="modalShow">
+                            <span class="closeShow" onclick="closeModalShow('modal-1')"></span>
+                            <div class="modalContent">
+                                <div class="modalCheckbox">
+                                
+                                <input type="checkbox" class="custom-checkbox" id="check" name="check">
+                                <label for="check">Матрицы 88°</label>
+                                </div>
+                                <div class="modalCheckbox">
+                                    <input type="checkbox" class="custom-checkbox" id="check1" name="check">
+                                    <label for="check1">Матрицы 85°</label>
+                                </div>
+                                <div class="modalCheckbox">
+                                    <input type="checkbox" class="custom-checkbox" id="check2" name="check">
+                                    <label for="check2">Матрицы 60°</label>
+                                </div>
+                                <div class="modalCheckbox">
+                                    <input type="checkbox" class="custom-checkbox" id="check3" name="check">
+                                    <label for="check3">Матрицы 45°</label>
+                                </div>
+                                <div class="modalCheckbox">
+                                    <input type="checkbox" class="custom-checkbox" id="check4" name="check">
+                                    <label for="check4">Матрицы 30°</label>
+                                </div>
+                                <div class="modalCheckbox">
+                                    <input type="checkbox" class="custom-checkbox" id="check5" name="check">
+                                    <label for="check5">Матрицы 26°</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="borderCatalog"></div>
+                        <div class="modalProduct btnCatalogLeft">
+                            <button onclick="showModal('modal-2')">
+                                <p>Матрицы AMADA PROMECAM</p>
+                            </button>
+                            <div id="modal-2" class="modalShow">
+                                <span class="closeShow" onclick="closeModalShow('modal-2')"></span>
+                                <div class="modalContent">
+                                    <div class="modalCheckbox">
+                                    <input type="checkbox" class="custom-checkbox" id="check6" name="check">
+                                    <label for="check6">Матрицы 88°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check7" name="check">
+                                        <label for="check7">Матрицы 85°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check8" name="check">
+                                        <label for="check8">Матрицы 60°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check9" name="check">
+                                        <label for="check9">Матрицы 45°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check10" name="check">
+                                        <label for="check10">Матрицы 30°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check11" name="check">
+                                        <label for="check11">Матрицы 26°</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="borderCatalog"></div>
+                        <div class="modalProduct btnCatalogLeft">
+                            <button onclick="showModal('modal-3')">
+                                <p>Пуансоны для плющения AMADA</p>
+                            </button>
+                            <div id="modal-3" class="modalShow">
+                                <span class="closeShow" onclick="closeModalShow('modal-3')"></span>
+                                <div class="modalContent">
+                                    <div class="modalCheckbox">
+                                    <input type="checkbox" class="custom-checkbox" id="check" name="check">
+                                    <label for="check">Матрицы 88°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check1" name="check">
+                                        <label for="check1">Матрицы 85°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check2" name="check">
+                                        <label for="check2">Матрицы 60°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check3" name="check">
+                                        <label for="check3">Матрицы 45°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check4" name="check">
+                                        <label for="check4">Матрицы 30°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check5" name="check">
+                                        <label for="check5">Матрицы 26°</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="borderCatalog"></div>
+                        <div class="modalProduct btnCatalogLeft">
+                            <button onclick="showModal('modal-4')">
+                                <p>Матрицы для плющения AMADA</p>
+                            </button>
+                            <div id="modal-4" class="modalShow">
+                                <span class="closeShow" onclick="closeModalShow('modal-4')"></span>
+                                <div class="modalContent">
+                                    
+                                    <div class="modalCheckbox">
+                                    <input type="checkbox" class="custom-checkbox" id="check12" name="check">
+                                    <label for="check12">Матрицы 88°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check13" name="check">
+                                        <label for="check13">Матрицы 85°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check14" name="check">
+                                        <label for="check14">Матрицы 60°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check15" name="check">
+                                        <label for="check15">Матрицы 45°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check16" name="check">
+                                        <label for="check16">Матрицы 30°</label>
+                                    </div>
+                                    <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check17" name="check">
+                                        <label for="check17">Матрицы 26°</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="borderCatalog"></div>
+                    </div>
+                    <div class="mainCatalogRight">
+                        <div class="containerMainBox containerCatalogRight">
+                                <h2>Пуансоны AMADA PROMECAM 88°</h2>
+                                <div class="infoBox infoBoxCatalog">
+                                    <div class="containerTopCatalog">
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                    </div>
+                                    <div class="containerBottonCatalog">
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+                        <div class="containerMainBox containerCatalogRight">
+                            <h2 class="directionContainerCatalogRight">Пуансоны AMADA PROMECAM 88°</h2>
+                            <div class="infoBox infoBoxCatalog">
+                                <div class="containerTopCatalog">
+                                    <div class="containerMainBoxInfo">
+                                        <a href="product.html">
+                                        <img src="style/images/catalogImg.svg" alt="img">
+                                        <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                        </a>
+                                        <h2>10 000 ₽</h2>
+                                        <button>В корзину</button>
+                                    </div>
+                                    <div class="containerMainBoxInfo">
+                                        <a href="product.html">
+                                        <img src="style/images/catalogImg.svg" alt="img">
+                                        <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                        </a>
+                                        <h2>10 000 ₽</h2>
+                                        <button>В корзину</button>
+                                    </div>
+                                    <div class="containerMainBoxInfo">
+                                        <a href="product.html">
+                                        <img src="style/images/catalogImg.svg" alt="img">
+                                        <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                        </a>
+                                        <h2>10 000 ₽</h2>
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                                <div class="containerBottonCatalog">
+                                    <div class="containerMainBoxInfo">
+                                        <a href="product.html">
+                                        <img src="style/images/catalogImg.svg" alt="img">
+                                        <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                        </a>
+                                        <h2>10 000 ₽</h2>
+                                        <button>В корзину</button>
+                                    </div>
+                                    <div class="containerMainBoxInfo">
+                                        <a href="product.html">
+                                        <img src="style/images/catalogImg.svg" alt="img">
+                                        <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                        </a>
+                                        <h2>10 000 ₽</h2>
+                                        <button>В корзину</button>
+                                    </div>
+                                    <div class="containerMainBoxInfo">
+                                        <a href="product.html">
+                                        <img src="style/images/catalogImg.svg" alt="img">
+                                        <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                        </a>
+                                        <h2>10 000 ₽</h2>
+                                        <button>В корзину</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- end of main -->
+
+        <!-- footer -->
+        <footer class="footer">
+            
+            <div class="footerTitle">
+                 <div class="footerTitleLeft">
+                     <h1>Остались вопросы?</h1>
+                     <p>Оставьте свои контакты и специалисты нашей <br> компании ответят на все интересующие вопросы, <br> а также сделают наиболее выгодное предложение</p>
+                 </div>
+                 <div class="footerTitlelRight">
+                     <div class="footerTitlelRightForms">
+                         <form id="myForm" onsubmit="return validateForm()" class="footerTitlelRightFormsLocation">
+                             <input type="text" placeholder="Имя">
+                             <input type="tel" id="phone" name="phone" placeholder="+7 (" class="tel" >
+                             <span id="phone-error" class="phone-error">Пожалуйста введите номер в +7 (___) ___-__-__ формате.</span>
+                             <input type="submit" value="Отправить" class="btnSubmit">
+                           </form>
+                     </div>
+                     <p>Нажимая на кнопку “отправить”, вы соглашаетесь на обработку персональных <br> данных в соответствии с политикой конфиденциальности</p>
+                 </div>
+            </div>
+            <div class="footerSuptitel">
+                 <div class="footerSuptitelUp">
+                     <div class="footerSuptitelContent footerContent">
+                         <h2 class="footerContact">КОНТАКТЫ</h2>
+                         <a href="tel:+79125371674"><h2>8 912 537 16 74</h2></a>
+                         <a href="mailto:mail@mail.com"><h2>mail@mail.com</h2></a>
+                         <p>г. Санкт-Петербург ул. <br> ХХХ, 22</p>
+                         <div class="iconNetwork">
+                             <a href="https://t.me/+79125371674"><img src="style/images/Telegram.svg" alt="telegram"></a>
+                             <a href="https://vk.me/"><img src="style/images/Vkontakte (VK).svg" alt="VK"></a>
+                             <a href="https://wa.me/+79125371674"><img src="style/images/WhatsApp.svg" alt="WhatsApp"></a>
+                         </div>
+                     </div>  
+                     <div class="footerSuptitelContent footerMenu">
+                         <h2>МЕНЮ</h2>
+                         <a href="Blog.html">Блог</a>
+                         <a href="aboutCompany.html">О компании</a>
+                         <a href="technicalInformation.html">Техническая информация</a>
+                         <a href="reviews.html">Отзывы</a>
+                         <a href="contacts.html">Контакты</a>
+                     </div>
+                     <div class="footerSuptitelContent">
+                         <h2>КАТАЛОГ</h2>
+                         <div class="linkFooter">
+                             <div class="linksFooter">
+                                 <a href="#">Пуансоны AMADA PROMECAM</a>
+                                 <a href="#">Матрицы AMADA PROMECAM</a>
+                                 <a href="#">Инструмент для плющения</a>
+                                 <a href="#">Адаптеры пуансонов</a>
+                                 <a href="#">Адаптеры матриц и подложки</a>
+                                 <a href="#">Пуансоны WILA SYSTEM</a>
+                                 <a href="#">Матрицы WILA SYSTEM</a>
+                             </div>
+                             <div class="linksFooter">
+                                 <a href="#">Пуансоны TRUMPF SYSTEM</a>
+                                 <a href="#">Матрицы TRUMPF SYSTEM</a>
+                                 <a href="#">Z-гибка</a>
+                                 <a href="#">Радиусная гибка</a>
+                                 <a href="#">Гибка без следов</a>
+                                 <a href="#">Специальный гибочный инструмент</a>
+                             </div>
+                         </div>
+ 
+                     </div> 
+                 </div>
+                 <div class="footerSuptitelDown">
+                     <p>© ООО «ХХХ»</p>
+                 </div>
+            </div>
+         </footer>
+        <!-- end of footer -->
+
+        <!-- script -->
+        <script src="js/script.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="js/swiper.js"></script>
+    </div>
+</body>
+</html>
