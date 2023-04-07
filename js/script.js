@@ -1,4 +1,4 @@
-// catalog
+// catalogInf
 const openModalBtn = document.getElementById("modal-open-btn");
 const modal = document.getElementById("modal");
 const closeBtn = document.getElementsByClassName("close")[0];
@@ -164,3 +164,25 @@ btn3.addEventListener('click', () => {
   input3.classList.toggle('activeBtn');
   backInput3.classList.toggle('activeBtn');
 });
+// reviewsModal
+function openImage(src) {
+  var modal = document.querySelector('.modalImg');
+  var modalImage = document.querySelector('#modal-image');
+  modalImage.src = src;
+  modal.style.display = 'block';
+}
+
+function closeModal() {
+  var modal = document.querySelector('.modalImg');
+  modal.style.display = 'none';
+}
+// catalogModal
+function showModal(modalId) {
+  var modalShow = document.getElementById(modalId);
+  modalShow.style.display = "block";
+}
+
+function closeModalShow(modalId) {
+  var modalShow = document.getElementById(modalId);
+  modalShow.style.display = "none";
+}
