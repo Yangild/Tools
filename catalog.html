@@ -148,154 +148,216 @@
                 </div>
                 <div class="boxMainCatalog">
                     <div class="mainCatalogLeft">
-                        <div class="borderCatalogTop"></div>
-                        <div class="modalProduct btnCatalogLeft">
-                            <button onclick="showModal('modal-1')">  
-                                <p>Пуансоны AMADA PROMECAM</p>
-                            </button>
-                        </div>
-                        
-                        <div id="modal-1" class="modalShow">
-                            <span class="closeShow" onclick="closeModalShow('modal-1')"></span>
-                            <div class="modalContent">
-                                <div class="modalCheckbox">
-                                
-                                <input type="checkbox" class="custom-checkbox" id="check" name="check">
-                                <label for="check">Матрицы 88°</label>
-                                </div>
-                                <div class="modalCheckbox">
-                                    <input type="checkbox" class="custom-checkbox" id="check1" name="check">
-                                    <label for="check1">Матрицы 85°</label>
-                                </div>
-                                <div class="modalCheckbox">
-                                    <input type="checkbox" class="custom-checkbox" id="check2" name="check">
-                                    <label for="check2">Матрицы 60°</label>
-                                </div>
-                                <div class="modalCheckbox">
-                                    <input type="checkbox" class="custom-checkbox" id="check3" name="check">
-                                    <label for="check3">Матрицы 45°</label>
-                                </div>
-                                <div class="modalCheckbox">
-                                    <input type="checkbox" class="custom-checkbox" id="check4" name="check">
-                                    <label for="check4">Матрицы 30°</label>
-                                </div>
-                                <div class="modalCheckbox">
-                                    <input type="checkbox" class="custom-checkbox" id="check5" name="check">
-                                    <label for="check5">Матрицы 26°</label>
-                                </div>
+                        <div class="mainCatalogLeftLocation">
+                            <div class="borderCatalogTop"></div>
+                            <div class="modalProduct btnCatalogLeft">
+                                <button onclick="showModal('modal-1')">  
+                                    <p>Пуансоны AMADA PROMECAM</p>
+                                </button>
                             </div>
-                        </div>
-                        <div class="borderCatalog"></div>
-                        <div class="modalProduct btnCatalogLeft">
-                            <button onclick="showModal('modal-2')">
-                                <p>Матрицы AMADA PROMECAM</p>
-                            </button>
-                            <div id="modal-2" class="modalShow">
-                                <span class="closeShow" onclick="closeModalShow('modal-2')"></span>
+                            
+                            <div id="modal-1" class="modalShow">
+                                <span class="closeShow" onclick="closeModalShow('modal-1')"></span>
                                 <div class="modalContent">
-                                    <div class="modalCheckbox">
-                                    <input type="checkbox" class="custom-checkbox" id="check6" name="check">
-                                    <label for="check6">Матрицы 88°</label>
-                                    </div>
-                                    <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check7" name="check">
-                                        <label for="check7">Матрицы 85°</label>
-                                    </div>
-                                    <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check8" name="check">
-                                        <label for="check8">Матрицы 60°</label>
-                                    </div>
-                                    <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check9" name="check">
-                                        <label for="check9">Матрицы 45°</label>
-                                    </div>
-                                    <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check10" name="check">
-                                        <label for="check10">Матрицы 30°</label>
-                                    </div>
-                                    <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check11" name="check">
-                                        <label for="check11">Матрицы 26°</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="borderCatalog"></div>
-                        <div class="modalProduct btnCatalogLeft">
-                            <button onclick="showModal('modal-3')">
-                                <p>Пуансоны для плющения AMADA</p>
-                            </button>
-                            <div id="modal-3" class="modalShow">
-                                <span class="closeShow" onclick="closeModalShow('modal-3')"></span>
-                                <div class="modalContent">
-                                    <div class="modalCheckbox">
-                                    <input type="checkbox" class="custom-checkbox" id="check12" name="check">
-                                    <label for="check12">Матрицы 88°</label>
-                                    </div>
-                                    <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check13" name="check">
-                                        <label for="check13">Матрицы 85°</label>
-                                    </div>
-                                    <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check14" name="check">
-                                        <label for="check14">Матрицы 60°</label>
-                                    </div>
-                                    <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check15" name="check">
-                                        <label for="check15">Матрицы 45°</label>
-                                    </div>
-                                    <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check16" name="check">
-                                        <label for="check16">Матрицы 30°</label>
-                                    </div>
-                                    <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check17" name="check">
-                                        <label for="check17">Матрицы 26°</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="borderCatalog"></div>
-                        <div class="modalProduct btnCatalogLeft">
-                            <button onclick="showModal('modal-4')">
-                                <p>Матрицы для плющения AMADA</p>
-                            </button>
-                            <div id="modal-4" class="modalShow">
-                                <span class="closeShow" onclick="closeModalShow('modal-4')"></span>
-                                <div class="modalContent">
+                                    <div class="modalCheckbox" onclick="scrollToBlock('#promecam88')">
                                     
-                                    <div class="modalCheckbox">
-                                    <input type="checkbox" class="custom-checkbox" id="check18" name="check">
-                                    <label for="check18">Матрицы 88°</label>
+                                    <input type="checkbox" class="custom-checkbox" id="check" name="check">
+                                    <label for="check">Пуансоны 88°</label>
+                                    </div>
+                                    <div class="modalCheckbox" onclick="scrollToBlock('#promecam85')">
+                                        <input type="checkbox" class="custom-checkbox" id="check1" name="check">
+                                        <label for="check1">Пуансоны 85°</label>
                                     </div>
                                     <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check19" name="check">
-                                        <label for="check19">Матрицы 85°</label>
+                                        <input type="checkbox" class="custom-checkbox" id="check2" name="check">
+                                        <label for="check2">Пуансоны 60°</label>
                                     </div>
                                     <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check20" name="check">
-                                        <label for="check20">Матрицы 60°</label>
+                                        <input type="checkbox" class="custom-checkbox" id="check3" name="check">
+                                        <label for="check3">Пуансоны 45°</label>
                                     </div>
                                     <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check21" name="check">
-                                        <label for="check21">Матрицы 45°</label>
+                                        <input type="checkbox" class="custom-checkbox" id="check4" name="check">
+                                        <label for="check4">Пуансоны 30°</label>
                                     </div>
                                     <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check22" name="check">
-                                        <label for="check22">Матрицы 30°</label>
-                                    </div>
-                                    <div class="modalCheckbox">
-                                        <input type="checkbox" class="custom-checkbox" id="check23" name="check">
-                                        <label for="check23">Матрицы 26°</label>
+                                        <input type="checkbox" class="custom-checkbox" id="check5" name="check">
+                                        <label for="check5">Пуансоны 26°</label>
                                     </div>
                                 </div>
                             </div>
+                            <div class="borderCatalog"></div>
+                            <div class="modalProduct btnCatalogLeft">
+                                <button onclick="showModal('modal-2')">
+                                    <p>Матрицы AMADA PROMECAM</p>
+                                </button>
+                                <div id="modal-2" class="modalShow">
+                                    <span class="closeShow" onclick="closeModalShow('modal-2')"></span>
+                                    <div class="modalContent" >
+                                        <div class="modalCheckbox" onclick="scrollToBlock('#matrix88')">
+                                        <input type="checkbox" class="custom-checkbox" id="check6" name="check">
+                                        <label for="check6">Матрицы 88°</label>
+                                        </div>
+                                        <div class="modalCheckbox" onclick="scrollToBlock('#matrix85')">
+                                            <input type="checkbox" class="custom-checkbox" id="check7" name="check">
+                                            <label for="check7">Матрицы 85°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check8" name="check">
+                                            <label for="check8">Матрицы 60°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check9" name="check">
+                                            <label for="check9">Матрицы 45°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check10" name="check">
+                                            <label for="check10">Матрицы 30°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check11" name="check">
+                                            <label for="check11">Матрицы 26°</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="borderCatalog"></div>
+                            <div class="modalProduct btnCatalogLeft">
+                                <button onclick="showModal('modal-3')">
+                                    <p>Пуансоны для плющения AMADA</p>
+                                </button>
+                                <div id="modal-3" class="modalShow">
+                                    <span class="closeShow" onclick="closeModalShow('modal-3')"></span>
+                                    <div class="modalContent">
+                                        <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check12" name="check">
+                                        <label for="check12">Матрицы 88°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check13" name="check">
+                                            <label for="check13">Матрицы 85°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check14" name="check">
+                                            <label for="check14">Матрицы 60°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check15" name="check">
+                                            <label for="check15">Матрицы 45°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check16" name="check">
+                                            <label for="check16">Матрицы 30°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check17" name="check">
+                                            <label for="check17">Матрицы 26°</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="borderCatalog"></div>
+                            <div class="modalProduct btnCatalogLeft">
+                                <button onclick="showModal('modal-4')">
+                                    <p>Матрицы для плющения AMADA</p>
+                                </button>
+                                <div id="modal-4" class="modalShow">
+                                    <span class="closeShow" onclick="closeModalShow('modal-4')"></span>
+                                    <div class="modalContent">
+                                        
+                                        <div class="modalCheckbox">
+                                        <input type="checkbox" class="custom-checkbox" id="check18" name="check">
+                                        <label for="check18">Матрицы 88°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check19" name="check">
+                                            <label for="check19">Матрицы 85°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check20" name="check">
+                                            <label for="check20">Матрицы 60°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check21" name="check">
+                                            <label for="check21">Матрицы 45°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check22" name="check">
+                                            <label for="check22">Матрицы 30°</label>
+                                        </div>
+                                        <div class="modalCheckbox">
+                                            <input type="checkbox" class="custom-checkbox" id="check23" name="check">
+                                            <label for="check23">Матрицы 26°</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="borderCatalog"></div>
                         </div>
-                        <div class="borderCatalog"></div>
                     </div>
+                   
                     <div class="mainCatalogRight">
-                        <div class="containerMainBox containerCatalogRight">
-                                <h2>Пуансоны AMADA PROMECAM 88°</h2>
+                        <div class="containerMainCatalogRight">
+                            <div class="containerMainBox containerCatalogRight " id="punches">
+                                    <h2 id="promecam88">Пуансоны AMADA PROMECAM 88°</h2>
+                                    <div class="infoBox infoBoxCatalog">
+                                        <div class="containerTopCatalog">
+                                            <div class="containerMainBoxInfo">
+                                                <a href="product.html">
+                                                <img src="style/images/catalogImg.svg" alt="img">
+                                                <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                                </a>
+                                                <h2>10 000 ₽</h2>
+                                                <button>В корзину</button>
+                                            </div>
+                                            <div class="containerMainBoxInfo">
+                                                <a href="product.html">
+                                                <img src="style/images/catalogImg.svg" alt="img">
+                                                <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                                </a>
+                                                <h2>10 000 ₽</h2>
+                                                <button>В корзину</button>
+                                            </div>
+                                            <div class="containerMainBoxInfo">
+                                                <a href="product.html">
+                                                <img src="style/images/catalogImg.svg" alt="img">
+                                                <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                                </a>
+                                                <h2>10 000 ₽</h2>
+                                                <button>В корзину</button>
+                                            </div>
+                                        </div>
+                                        <div class="containerBottonCatalog">
+                                            <div class="containerMainBoxInfo">
+                                                <a href="product.html">
+                                                <img src="style/images/catalogImg.svg" alt="img">
+                                                <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                                </a>
+                                                <h2>10 000 ₽</h2>
+                                                <button>В корзину</button>
+                                            </div>
+                                            <div class="containerMainBoxInfo">
+                                                <a href="product.html">
+                                                <img src="style/images/catalogImg.svg" alt="img">
+                                                <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                                </a>
+                                                <h2>10 000 ₽</h2>
+                                                <button>В корзину</button>
+                                            </div>
+                                            <div class="containerMainBoxInfo">
+                                                <a href="product.html">
+                                                <img src="style/images/catalogImg.svg" alt="img">
+                                                <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                                </a>
+                                                <h2>10 000 ₽</h2>
+                                                <button>В корзину</button>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                            <div class="containerMainBox containerCatalogRight " >
+                                <h2 class="directionContainerCatalogRight" id="promecam85">Пуансоны AMADA PROMECAM 85°</h2>
                                 <div class="infoBox infoBoxCatalog">
                                     <div class="containerTopCatalog">
                                         <div class="containerMainBoxInfo">
@@ -351,65 +413,241 @@
                                     </div>
                                     
                                 </div>
-                        </div>
-                        <div class="containerMainBox containerCatalogRight">
-                            <h2 class="directionContainerCatalogRight">Пуансоны AMADA PROMECAM 88°</h2>
-                            <div class="infoBox infoBoxCatalog">
-                                <div class="containerTopCatalog">
-                                    <div class="containerMainBoxInfo">
-                                        <a href="product.html">
-                                        <img src="style/images/catalogImg.svg" alt="img">
-                                        <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
-                                        </a>
-                                        <h2>10 000 ₽</h2>
-                                        <button>В корзину</button>
+                            </div>
+                            <div class="containerMainBox containerCatalogRight " id="matrix">
+                                <h2 class="directionContainerCatalogRight" id="matrix88">Матрицы AMADA PROMECAM 88°</h2>
+                                <div class="infoBox infoBoxCatalog">
+                                    <div class="containerTopCatalog">
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
                                     </div>
-                                    <div class="containerMainBoxInfo">
-                                        <a href="product.html">
-                                        <img src="style/images/catalogImg.svg" alt="img">
-                                        <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
-                                        </a>
-                                        <h2>10 000 ₽</h2>
-                                        <button>В корзину</button>
+                                    <div class="containerBottonCatalog">
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
                                     </div>
-                                    <div class="containerMainBoxInfo">
-                                        <a href="product.html">
-                                        <img src="style/images/catalogImg.svg" alt="img">
-                                        <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
-                                        </a>
-                                        <h2>10 000 ₽</h2>
-                                        <button>В корзину</button>
-                                    </div>
+                                    
                                 </div>
-                                <div class="containerBottonCatalog">
-                                    <div class="containerMainBoxInfo">
-                                        <a href="product.html">
-                                        <img src="style/images/catalogImg.svg" alt="img">
-                                        <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
-                                        </a>
-                                        <h2>10 000 ₽</h2>
-                                        <button>В корзину</button>
+                            </div>
+                            <div class="containerMainBox containerCatalogRight ">
+                                <h2 class="directionContainerCatalogRight" id="matrix85">Матрицы AMADA PROMECAM 85°</h2>
+                                <div class="infoBox infoBoxCatalog">
+                                    <div class="containerTopCatalog">
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
                                     </div>
-                                    <div class="containerMainBoxInfo">
-                                        <a href="product.html">
-                                        <img src="style/images/catalogImg.svg" alt="img">
-                                        <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
-                                        </a>
-                                        <h2>10 000 ₽</h2>
-                                        <button>В корзину</button>
+                                    <div class="containerBottonCatalog">
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
                                     </div>
-                                    <div class="containerMainBoxInfo">
-                                        <a href="product.html">
-                                        <img src="style/images/catalogImg.svg" alt="img">
-                                        <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
-                                        </a>
-                                        <h2>10 000 ₽</h2>
-                                        <button>В корзину</button>
-                                    </div>
+                                    
                                 </div>
-                                
+                            </div>
+                            <div class="containerMainBox containerCatalogRight " id="flatteningPunches">
+                                <h2 class="directionContainerCatalogRight">Пуансоны для плющения AMADA</h2>
+                                <div class="infoBox infoBoxCatalog">
+                                    <div class="containerTopCatalog">
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                    </div>
+                                    <div class="containerBottonCatalog">
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="containerMainBox containerCatalogRight " id="flatteningMatrix">
+                                <h2 class="directionContainerCatalogRight">Матрицы для плющения AMADA</h2>
+                                <div class="infoBox infoBoxCatalog">
+                                    <div class="containerTopCatalog">
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                    </div>
+                                    <div class="containerBottonCatalog">
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                        <div class="containerMainBoxInfo">
+                                            <a href="product.html">
+                                            <img src="style/images/catalogImg.svg" alt="img">
+                                            <p>Пуансон AP 1041 <br> 85° H115 R0,8 </p>
+                                            </a>
+                                            <h2>10 000 ₽</h2>
+                                            <button>В корзину</button>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -490,9 +728,12 @@
 
         <!-- script -->
         <script src="js/script.js"></script>
-        <script src="js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="js/swiper.js"></script>
+        <script src="js/inputProduct.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/numberValid.js"></script>
+        <script src="js/productBtn.js"></script>
     </div>
 </body>
 </html>
