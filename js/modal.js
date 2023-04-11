@@ -23,7 +23,7 @@ function openImage(src) {
   var modal = document.querySelector('.modalImg');
   var modalImage = document.querySelector('#modal-image');
   modalImage.src = src;
-  modal.style.display = 'flex';
+  modal.style.display = 'block';
 
   // block scroll body
   document.body.style.overflow = 'hidden';
