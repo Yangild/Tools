@@ -1134,6 +1134,8 @@ label{
     margin-top: 40px;
     margin-bottom: 15px;
     border: 10px solid #A3A3A3;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 .imgFastening:hover{
@@ -1283,6 +1285,8 @@ label{
 }
 .hoverInfoSectionsImg{
     border: 10px solid #F9F9F9;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
     transition: all 0.5s;
 }
 .hoverInfoSectionsImg:hover{
@@ -1875,9 +1879,15 @@ option{
   }
   
   .modalImg img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 100px auto;
     max-width: 50vw;
     max-height: 100%;
