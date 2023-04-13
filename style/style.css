@@ -2562,9 +2562,6 @@ option{
             -ms-flex-align: start;
                 align-items: flex-start;
     }
-    .inptuProduct {
-        left: 7px;
-    }
     .boxMainToolDown img{
         max-height: 144px;
     }
