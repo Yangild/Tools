@@ -1294,6 +1294,9 @@ label{
     cursor: pointer;
 }
 /* Product.html */
+.productLeft{
+    margin-right: 40px;
+}
 .product{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2204,6 +2207,7 @@ option{
                 justify-content: center;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+        flex-direction: column;
     }
     .iconNetwork{
         display: -webkit-box;
