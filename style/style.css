@@ -1426,7 +1426,6 @@ label{
 }
 .inptuProduct{
     z-index: 1;
-    left: 15px;
     position: absolute;
     width: 40px;
     text-align: center;
