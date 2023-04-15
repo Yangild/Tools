@@ -490,7 +490,7 @@ label{
   .over{
       display: none;
   }
-  @media screen and (max-width: 1286px) {
+  @media screen and (max-width: 1386px) {
       .navbar{
           display: -webkit-box;
           display: -ms-flexbox;
@@ -2116,6 +2116,9 @@ option{
     }
 }
 @media (max-width: 1400px) {
+    .headerLogo img {
+        width: 230px;
+    }
     .reviewsContainer img{
         width: 100%;
     }
@@ -2176,16 +2179,16 @@ option{
     .footerSuptitelContent a {
         width: auto;
     }
-}
-@media (max-width: 1286px) {
-    .containerInfoSections{
-        min-width: 1px;
-    }
     .headerNumber{ 
         display: none;
     }
     .headerNavigation{
         display: none;
+    }
+}
+@media (max-width: 1286px) {
+    .containerInfoSections{
+        min-width: 1px;
     }
     .header{
         padding: 16px 80px;
