@@ -2204,12 +2204,12 @@ option{
     }
 
     .infoBox{
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        justify-content: flex-start;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        flex-direction: column;
+    }
+    .containerMainBoxInfo{
+        margin-top: 20px;
     }
     .iconNetwork{
         display: -webkit-box;
@@ -2298,9 +2298,7 @@ option{
     .mainSliderLeft{
         width: 400px;
     }
-    .containerMainBoxInfo{
-        margin-top: 20px;
-    }
+   
     
     .mainSlider{
         padding: 40px;
@@ -2765,7 +2763,6 @@ option{
         -webkit-box-align: normal;
             -ms-flex-align: normal;
                 align-items: normal;
-        margin-right: 0;
     }
     .mainCatalogLeft{
         width: 100%;
@@ -2900,6 +2897,12 @@ option{
     .blogForCompany span {
         font-size: 14px;
     }
+    .infoBox{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
 }
 @media (max-width: 420px){
     .boxBlogNew{
@@ -2949,12 +2952,6 @@ option{
     }
     .headerTitle img{
 width: 100%;
-    }
-    .infoBox{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
     }
     .btnMobile{
         display: block;
