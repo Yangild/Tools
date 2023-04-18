@@ -2900,10 +2900,12 @@ option{
         font-size: 14px;
     }
     .infoBox{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .containerMainBoxInfo{
+        margin-right: 20px;
     }
 }
 @media (max-width: 420px){
@@ -2924,7 +2926,6 @@ option{
     }
     .containerMainBoxInfo p{
         font-size: 13px;
-        text-align: center;
     }
     p{
         font-size: 13px;
@@ -2936,12 +2937,6 @@ option{
     .containerMainBoxInfo button {
     font-size: 14px;
     padding: 12px;
-    }
-    .containerMainBoxInfo{
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        margin-right: 0;
     }
     .mainSliderLeft button{
         font-size: 16px;
